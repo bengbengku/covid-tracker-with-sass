@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+#nav {
+  height: 50px;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+
+.map-info {
+  background-color: bisque;
+  height: 400px;
+}
+
+.data-info {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  background-color: #fefefe;
+}
+
+.table tr th {
+  font-size: small;
+  color: #695d5c;
+  font-weight: 600;
+}
+
+.country-data .table td {
+  padding: .5rem;
+  border: none;
+}
+
+.country-data .table thead th {
+  border-bottom: none;
+}
+
+.country-data .table th {
+  border-top: none;
+}
+
+.table th {
+  background-color: white !important;
+  position: sticky;
+  top: 0;
+  height: 0;
+}
+
+.cases-table-container h5, .chart-container h5 {
+  text-align: center;
+  color:  #695d5c;
+  font-weight: 600;
+}
+
+
+.country-data {
+  margin-top: 20px;
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+
+
+.country-img {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 3px;
+  background-size: contain;
+}
+
+#img-flexbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chart-data {
+  width: 30%;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.info-flag img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.info-flag {
+  height: 80px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.info-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.info-container {
+  width: 150px;
+}
