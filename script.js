@@ -228,8 +228,6 @@ const showDataInTable = (data) => {
                   country.countryInfo.flag
                 })"></div>${country.country}</td>
                 <td>${numeral(country.cases).format("0,0")}</td>
-                <td>${numeral(country.recovered).format("0,0")}</td>
-                <td>${numeral(country.deaths).format("0,0")}</td>
             </tr>
         `;
     document.getElementById("table-data").innerHTML = html;

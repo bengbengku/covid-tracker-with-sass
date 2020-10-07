@@ -1,5 +1,6 @@
+$body-background-color: #384474;
 body {
-    margin: 0;
+    background-color: $body-background-color;
   }
   
   #nav {
@@ -50,10 +51,24 @@ body {
     height: 0;
   }
   
-  .cases-table-container h5, .chart-container h5 {
+  .cases-table-container h6 {
     text-align: center;
     color:  #695d5c;
     font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .chart-container h5 {
+    text-align: center;
+    color:  #695d5c;
+    font-weight: 600;
+  }
+
+  .live-icon {
+   display: flex;
+   font-size: 10px;
+   align-items: center;
   }
   
   

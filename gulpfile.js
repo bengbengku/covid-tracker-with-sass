@@ -1,7 +1,16 @@
-function defaultTask(cb) {
-  // place code for your default task here
-  console.log('Working');
-  cb();
-}
-
-exports.default = defaultTask;
+'use strict';
+ 
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+ 
+sass.compiler = require('node-sass');
+ 
+gulp.task('sass', function () {
+  return gulp.src('./stylesheets/new-style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./build'));
+});
+ 
+gulp.task('watch', function () {
+  gulp.watch('./stylesheets/*.scss', gulp.series('sass'));
+});
