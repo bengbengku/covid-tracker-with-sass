@@ -2,12 +2,14 @@
  
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+const concat = require('gulp-concat');
 const minify = require('gulp-minify');
  
 sass.compiler = require('node-sass');
 
 gulp.task('minify-js', function() {
     return gulp.src(['./*.js', '!./gulpfile.js'])
+    .pipe(concat('bundle.js')) 
     .pipe(minify({
         noSource: true
     }))
