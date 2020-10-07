@@ -7,7 +7,7 @@ sass.compiler = require('node-sass');
  
 gulp.task('sass', function () {
   return gulp.src('./stylesheets/new-style.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./build'));
 });
  
