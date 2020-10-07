@@ -2,8 +2,17 @@
  
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+const minify = require('gulp-minify');
  
 sass.compiler = require('node-sass');
+
+gulp.task('minify-js', function() {
+    return gulp.src(['./*.js', '!./gulpfile.js'])
+    .pipe(minify({
+        noSource: true
+    }))
+    .pipe(gulp.dest('./build'))
+})
  
 gulp.task('sass', function () {
   return gulp.src('./stylesheets/new-style.scss')
