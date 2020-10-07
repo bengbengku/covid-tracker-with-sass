@@ -1,0 +1,22 @@
+{
+  "name": "covid-projetc-with-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bengbengku/covid-tracker-with-sass.git"
+  },
+  "author": "Anggiat Benget Napitupulu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bengbengku/covid-tracker-with-sass/issues"
+  },
+  "homepage": "https://github.com/bengbengku/covid-tracker-with-sass#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
