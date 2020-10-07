@@ -1,6 +1,7 @@
 "use strict";
 
 window.onload = () => {
+  initMap();
   getCountriesData();
   getHistoricalData();
   getWorldCoronaData();
