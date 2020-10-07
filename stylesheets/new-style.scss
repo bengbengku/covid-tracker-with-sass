@@ -1,3 +1,6 @@
+@import '_mobile.scss';
+@import '_style.scss';
+
 $box-shadow-color : rgba(0, 0, 0, 0.5);
 $body-background-color: #f5f6fa;
 
@@ -46,30 +49,31 @@ body {
   font-weight: 600;
 }
 
-.stats-container .card-title {
+.stats-container {
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 8px -4px $box-shadow-color;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .total {
+    font-size: 0.8rem;
+  }
+
+  .card-title {
     color: #695d5c;
     font-weight: 400;
-}
+  }
 
-.stats-container .card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 8px -4px $box-shadow-color;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.stats-container .card-subtitle {
+  .card-subtitle {
     font-weight: 600;
-}
-
-
-.stats-container .total {
-    font-size: 0.8rem;
-}
-
-.search-container .card-body {
-  padding: 1rem;
+  }
 }
 
 .side-panel-container {
