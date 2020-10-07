@@ -21,7 +21,8 @@ gulp.task('sass', function () {
 });
  
 gulp.task('watch', function () {
+  gulp.watch('./*.js', gulp.series('minify-js'));
   gulp.watch('./stylesheets/*.scss', gulp.series('sass'));
 });
 
-gulp.task('default', gulp.series('sass', 'watch'));
+gulp.task('default', gulp.series('minify-js','sass', 'watch'));
